@@ -1,0 +1,103 @@
+<templateSet group="Rocket Firm">
+  <template name="&quot;&quot;" value="«$SELECTION$»" description="Typograpghy | Double-angle quotation mark" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="--" value="—" description="Typograpghy | Emdash (Long dash)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="widget" value="&lt;div class=&quot;widget&quot;&gt;&#10;    &lt;div class=&quot;widget-content padding&quot;&gt;&#10;        $SELECTION$&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="Bootstrap | Widget tags" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="=" value="&lt;?= $END$ ?&gt;" description="PHP | Echo php code." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ec" value="&lt;?= $END$ ?&gt;" description="PHP | Echo php code." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="yt" value="&lt;?= Yii::t('frontend', '$SELECTION$') ?&gt;" description="YII2 | Translation of word via Yii:t()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="url" value="&lt;?= Url::to('$SELECTION$') ?&gt;" description="YII2 | Url helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="uweb" value="&lt;?= Url::to('@web/$SELECTION$') ?&gt;" description="YII2 | Url helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="route" value="&lt;?= Url::to(['$SELECTION$']) ?&gt;" description="YII2 | Url helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="php" value="&lt;?php $END$ ?&gt;" description="&lt;?php $END$ ?&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="nf" value="&lt;?= number_format($VAR$, 0, ',', ' ') ?&gt;" description="PHP | Number Format" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="foreach" value="&lt;?php foreach($ARRAY$ as $KEY$ =&gt; $VALUE$): ?&gt;&#10;    $SELECTION$&#10;&lt;?php endforeach ?&gt;" description="PHP | Generates/surrounds selection with foreach" toReformat="false" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="if" value="&lt;?php if ($CONDITION$) : ?&gt;&#10;    $SELECTION$&#10;&lt;?php endif; ?&gt;" description="PHP | Generates/surrounds selection with if" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="var" value="&lt;?php&#10;/**&#10; * @var $END$&#10; */&#10;?&gt;" description="PHPDoc | Generates PHP comment block with @var" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="cmt" value="&lt;?php /*&#10;$SELECTION$&#10;*/ ?&gt;" description="PHP | Generates/surronds selection with php comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="rmt" value="$this-&gt;registerMetaTag([&#10;    'name' =&gt; '$TAGNAME$',&#10;    'content' =&gt; $SELECTION$,&#10;]);" description="Yii2 | Register Meta-tags" toReformat="false" toShortenFQNames="true">
+    <variable name="TAGNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="yiitrans" value="$transaction = Yii::$app-&gt;db-&gt;beginTransaction();&#10;try {&#10;    $END$&#10;    $transaction-&gt;commit();&#10;} catch (\Exception $e) {&#10;    $transaction-&gt;rollBack();&#10;}" description="Yii2 | DB transaction" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="act" value="public function action$NAME$($PARAMETERS$)&#10;{&#10;    return $END$;&#10;}" description="Yii2 | Controller action" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

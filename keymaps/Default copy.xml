@@ -1,0 +1,9 @@
+<keymap version="1" name="Default copy" parent="Mac OS X 10.5+">
+  <action id="GotoTest" />
+  <action id="Images.ShowThumbnails" />
+  <action id="RunDashboard.ShowConfigurations" />
+  <action id="SurroundWith">
+    <keyboard-shortcut first-keystroke="meta alt t" />
+    <keyboard-shortcut first-keystroke="shift meta t" />
+  </action>
+</keymap>
