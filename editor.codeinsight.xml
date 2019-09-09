@@ -5,7 +5,8 @@
     <option name="SURROUND_SELECTION_ON_QUOTE_TYPED" value="true" />
   </component>
   <component name="PhpCodeFoldingSettings">
-    <option name="COLLAPSE_HERE_DOCS" value="true" />
+    <option name="COLLAPSE_METHOD_BODY" value="true" />
+    <option name="COLLAPSE_CLASSES" value="true" />
   </component>
   <component name="XmlSettings">
     <option name="SHOW_XML_ADD_IMPORT_HINTS" value="false" />
