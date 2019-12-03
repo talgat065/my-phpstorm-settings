@@ -1,12 +1,4 @@
 <application>
-  <component name="CodeFoldingSettings">
-    <option name="COLLAPSE_FILE_HEADER" value="false" />
-    <option name="COLLAPSE_DOC_COMMENTS" value="true" />
-  </component>
-  <component name="CodeInsightSettings">
-    <option name="PARAMETER_INFO_DELAY" value="2000" />
-    <option name="SMART_END_ACTION" value="false" />
-  </component>
   <component name="XmlSettings">
     <option name="SHOW_XML_ADD_IMPORT_HINTS" value="false" />
   </component>
